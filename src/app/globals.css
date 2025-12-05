@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  font-weight: 400;
+  src: url('/fonts/Google_Sans_flex/GoogleSans.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Volkhov';
+  font-weight: 400;
+  src: url('/fonts/Volkhov/Volkhov-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@theme {
+  --font-googlesans: 'GoogleSans', Helvetica, sans-serif;
+  --font-poppins: 'Poppins', Helvetica, sans-serif;
+  --font-volkhov: 'Volkhov', Helvetica, sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  font-family: var(--font-poppins);
+}
